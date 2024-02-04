@@ -9,6 +9,8 @@ namespace AbbyWeb.Models
         [Required]
         public string  Name{ get; set; }
         [Required]
+        [Display(Name="Display Order")]
+        [Range(0,100,ErrorMessage ="please enternumber between")]  
         public string  DisplayOrder { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5igpj6z4UdGwq2aKzFaKn+p7beUBDHzr5behnZZsp3M=",
+  "Hash": "qHzQz1Q8ZH3o53iVyK+A6XrE+ZLpIoqrblF3JJiCsBI=",
   "Source": "AbbyWeb",
   "BasePath": "_content/AbbyWeb",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Project\\Abby\\AbbyWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AbbyWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Project\\Abby\\AbbyWeb\\wwwroot\\css\\Bootwatchstylet.css",
+      "SourceId": "AbbyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Abby\\AbbyWeb\\wwwroot\\",
+      "BasePath": "_content/AbbyWeb",
+      "RelativePath": "css/Bootwatchstylet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Bootwatchstylet.css"
     },
     {
       "Identity": "D:\\Project\\Abby\\AbbyWeb\\wwwroot\\css\\site.css",

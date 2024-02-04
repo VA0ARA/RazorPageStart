@@ -17,11 +17,23 @@ namespace AbbyWeb.Pages.Categories
         {
             _db = db;
         }
-        public async Task<IActionResult> OnPost(Category cat)
+        public void  OnGet()
         {
-            await _db.Category.AddAsync(cat);
-            await _db.SaveChangesAsync();
-            return RedirectToPage("Index");
+
+        }
+        public async Task<IActionResult> OnPost()
+        {
+            if (Category.Name == Category.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError(string.Empty, " can not use the same name ");
+            }
+            if(ModelState.IsValid) {
+
+                await _db.Category.AddAsync(Category);
+                await _db.SaveChangesAsync();
+                return RedirectToPage("Index");
+            }
+            return Page();
         }
 
     }
