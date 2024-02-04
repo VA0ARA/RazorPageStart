@@ -1,3 +1,6 @@
+using AbbyWeb.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace AbbyWeb
 {
     public class Program
@@ -8,6 +11,7 @@ namespace AbbyWeb
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaulConetion")));
 
             var app = builder.Build();
 
