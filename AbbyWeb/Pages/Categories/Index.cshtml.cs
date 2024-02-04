@@ -9,14 +9,14 @@ namespace AbbyWeb.Pages.Categories
     {
         public readonly ApplicationDbContext _db;
         public IEnumerable<Category> categoties { get; set; }
-         public IndexModel(ApplicationDbContext db)
+        public IndexModel(ApplicationDbContext db)
         {
             _db = db;
         }
 
         public void OnGet()
         {
-            categoties=_db.Categories;
+            categoties=_db.Category;
         }
     }
 }

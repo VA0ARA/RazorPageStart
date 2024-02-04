@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AbbyWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240204060905_AddCategoryTabel")]
-    partial class AddCategoryTabel
+    [Migration("20240204101921_AddCategoryTable")]
+    partial class AddCategoryTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,7 +41,7 @@ namespace AbbyWeb.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Category");
                 });
 #pragma warning restore 612, 618
         }
